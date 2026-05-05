@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<!--css-->
+<link rel="stylesheet" href="style.css">
+
+<!-- Bootstrap -->
+<link href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+  background: #a8c3a5;
+  padding: 50px;
+}
+
+.contact-section {
+  padding: 60px 0;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+textarea.form-control {
+  height: 140px;
+}
+
+.btn-send {
+  background: #1f9d55;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.btn-send:hover {
+  background: #157347;
+}
+
+.info-card {
+  background: #e6e6e6;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background: #d4edda;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  color: #198754;
+  font-size: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header-wrapper">    
+    <!-- TOPBAR -->
+      <div class="topbar-inner py-2">
+        <div class="container d-flex justify-content-between">
+          <div>
+            <i class="bi bi-envelope"></i> example@gmail.com
+            <i class="bi bi-telephone ms-3"></i> +01234567890
+          </div>
+          <div>
+            <i class="bi bi-facebook me-2"></i>
+            <i class="bi bi-twitter me-2"></i>
+            <i class="bi bi-instagram me-2"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    <!-- NAVBAR -->
+      <div class="navbar-inner">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="ex-navbar-brand" href="index.html">Environs</a>
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-start" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="causes.html">Causes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    Pages
+                  </a>
+                <ul class="dropdown-menu dropdown-menu-success">
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                  <li><a class="dropdown-item" href="donation.html">Donation</a></li>
+                  <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Lihat Semua</a></li>
+                </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-success rounded-0" href="#">Donate</button>
+              </div>
+          </div>
+        </nav>   
+      </div>
+        <a class="bundar" href="#"><i class="bi bi-arrow-up"></i></a>
+  </div>
+
+<section class="contact-section">
+<div class="container">
+  <div class="row g-4">
+
+    <!-- LEFT (FORM) -->
+    <div class="col-lg-6">
+      <h2 class="fw-bold">Get in touch</h2>
+      <p class="text-muted">Contact us for any question</p>
+
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Subject">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Donate">
+          </div>
+
+          <div class="col-12">
+            <textarea class="form-control" placeholder="Message"></textarea>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-send w-100">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="col-lg-6">
+
+      <!-- INFO CARDS -->
+      <div class="row g-3 mb-3">
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="icon-circle">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <h6>Address</h6>
+            <small>Indonesia</small>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="icon-circle">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <h6>Mail Us</h6>
+            <small>info@email.com</small>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info-card">
+            <div class="icon-circle">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <h6>Telephone</h6>
+            <small>+62 812 3456</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container">
+        <iframe 
+          src="https://maps.google.com/maps?q=Indonesia&t=&z=6&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!--footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- Newsletter -->
+      <div class="col-md-3">
+        <h5>Newsletter</h5>
+        <p>Dapatkan update terbaru langsung ke email Anda.</p>
+        <div class="input-group newsletter">
+          <input type="email" class="form-control" placeholder="Enter your email">
+          <button class="btn">Signup</button>
+        </div>
+      </div>
+
+      <!-- Our Services -->
+      <div class="col-md-3">
+        <h5>Our Services</h5>
+        <a href="#">Donate</a>
+        <a href="#">Volunteer</a>
+        <a href="#">Education</a>
+        <a href="#">Help Center</a>
+        <a href="#">Support</a>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="col-md-3">
+        <h5>Volunteer</h5>
+        <a href="#">Team</a>
+        <a href="#">Join Us</a>
+        <a href="#">Events</a>
+        <a href="#">Community</a>
+        <a href="#">Programs</a>
+      </div>
+
+      <!-- Gallery -->
+      <div class="col-md-3">
+        <h5>Our Gallery</h5>
+        <div class="row g-2 gallery">
+          <div class="col-4"><img src="https://picsum.photos/100?1"></div>
+          <div class="col-4"><img src="https://picsum.photos/100?2"></div>
+          <div class="col-4"><img src="https://picsum.photos/100?3"></div>
+          <div class="col-4"><img src="https://picsum.photos/100?4"></div>
+          <div class="col-4"><img src="https://picsum.photos/100?5"></div>
+          <div class="col-4"><img src="https://picsum.photos/100?6"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+  
+  <!-- Kiri -->
+  <p class="mb-0"><i class="bi bi-twitter mx-2"></i> 2025 Your Website</p>
+
+  <!-- Tengah (icons sosial) -->
+  <div class="text-center">
+    <i class="bi bi-facebook mx-2"></i>
+    <i class="bi bi-twitter mx-2"></i>
+    <i class="bi bi-globe mx-2"></i>
+    <i class="bi bi-instagram mx-2"></i>
+    <i class="bi bi-linkedin mx-2"></i>
+  </div>
+
+  <!-- Kanan (icons kecil) -->
+  <div>
+    <i class="bi bi-heart-fill mx-2"></i>
+    <i class="bi bi-twitter mx-2"></i>
+    <i class="bi bi-globe mx-2"></i>
+  </div>
+
+</div>
+
+  </div>
+</footer>
+
+</body>
+</html>
